@@ -49,16 +49,21 @@
 
 ```
 # Site settings
-title: BY Blog                    # 你的博客网站标题
-SEOTitle: 柏荧的博客 | BY Blog		# SEO 标题
-description: "Hey"	   	   # 随便说点，描述一下
-
-# SNS settings      
-github_username: qiubaiying     # 你的github账号
-jianshu_username: e71990ada2fd  # 你的简书ID。
+title: Parasol Blog            # 你的博客网站标题
+SEOTitle: 邓瑞东的博客 | Parasol Blog  # SEO 标题
+header-img: img/home-bg.jpg
+email: 879623546@qq.com
+description: "All things are difficult before they are easy." # 随便说点，可以写座右铭
+keyword: "Parasol, Parasol Blog, 邓瑞东的博客, dengruidong, 邓瑞东, iOS, Apple, iPhone"
+url: "http://parasolhunter.github.io"          # your host, for absolute URL
+baseurl: ""      # 可以不用填
+github_repo: "https://github.com/parasolHunter/parasolhunter.github.io.git" # you code repository
 
 # Build settings
-# paginate: 10              # 一页你准备放几篇文章
+permalink: pretty
+paginate: 10                 # 一页你准备放几篇文章
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 ```
 
 Jekyll官方网站还有很多的参数可以调，比如设置文章的链接形式...网址在这里：[Jekyll - Official Site](http://jekyllrb.com/) 中文版的在这里：[Jekyll中文](http://jekyllcn.com/).
@@ -72,15 +77,15 @@ yaml 头文件长这样:
 ```
 ---
 layout:     post
-title:      定时器 你真的会使用吗？
-subtitle:   iOS定时器详解
-date:       2016-12-13
-author:     BY
-header-img: img/post-bg-ios9-web.jpg
+title:      标题
+subtitle:   副标题
+date:       创作日期
+author:     Parasol
+header-img: img/home-bg.jpg
 catalog: 	 true
 tags:
-    - iOS
-    - 定时器
+    - css
+    - 基础样式
 ---
 
 ```
@@ -88,15 +93,15 @@ tags:
 ### 侧边栏
 
 看右边:
-![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-side.jpg)
+![](https://raw.githubusercontent.com/parasolHunter/parasolhunter.github.io/master/img/readme-side.jpg)
 
 设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
 
 ```
 # Sidebar settings
-sidebar: true  #添加侧边栏
+sidebar: true                           # 添加侧边栏
 sidebar-about-description: "简单的描述一下你自己"
-sidebar-avatar: /img/avatar-by.jpg     #你的大头贴，请使用绝对地址.注意：名字区分大小写！后缀名也是
+sidebar-avatar: /img/about-RD-gentle.jpg      # 你的大头贴，请使用绝对地址.注意：名字区分大小写！后缀名也是
 ```
 
 侧边栏是响应式布局的，当屏幕尺寸小于992px的时候，侧边栏就会移动到底部。具体请见bootstrap栅格系统 <http://v3.bootcss.com/css/>
@@ -123,15 +128,16 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 
 ### Social-media Account
 
-在下面输入的社交账号，没有的添加的不会显示在侧边框中。新加入了[简书](https:/www.jianshu.com)链接, <http://www.jianshu.com/u/e71990ada2fd>
+在下面输入的社交账号，没有的添加的不会显示在侧边框中。新加入了[简书](https:/www.jianshu.com)链接, <http://www.jianshu.com/u/0d4833dfcc16>
 
-	# SNS settings
+	# SNS settings      
 	RSS: false
-	jianshu_username: 	jianshu_id 
+	weibo_username:     username
 	zhihu_username:     username
+	github_username:    dengruidong  # 你的github账号
 	facebook_username:  username
-	github_username:    username
-	# weibo_username:   username
+	jianshu_username:   0d4833dfcc16     # 你的简书ID
+	twitter_username:  	username
 	
 	
 
@@ -147,12 +153,8 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 # Friends
 friends: [
     {
-        title: "BY Blog",
-        href: "https://qiubaiying.github.io/"
-    },
-    {
-        title: "Apple",
-        href: "https://apple.com/"
+        title: "Parasol Blog",
+        href: "https://parasolhunter.github.io/"
     }
 ]
 ```
@@ -186,20 +188,20 @@ iframe在不同的设备中，将会自动的调整大小。保留内边距是�
 
 优点：国际比较流行，界面也很大气、简洁，如果有人评论，还能实时通知，直接回复通知的邮件就行了；
 
-缺点：评论必须要去注册一个disqus账号，分享一般只有Facebook和Twitter，另外在墙内加载速度略慢了一点。想要知道长啥样，可以看以前的版本点[这里](http://brucezhaor.github.io/about.html) 最下面就可以看到。
+缺点：评论必须要去注册一个disqus账号，分享一般只有Facebook和Twitter，另外在墙内加载速度略慢了一点。
 
 > Node：有很多人反映 Disqus 插件加载不出来，可能墙又架高了，有条件的话翻个墙就好了~
 
 **使用：**
 
-**首先**，你需要去注册一个Disqus帐号。**不要直接使用我的啊！**
+**首先**，你需要去注册一个Disqus帐号。
 
 **其次**，你只需要在下面的 yaml 头文件中设置一下就可以了。
 
 ```
 # 评论系统
 # Disqus（https://disqus.com/）
-disqus_username: qiubaiying
+disqus_username: dengruidong
 ```
 
 #### Gitalk
@@ -210,20 +212,40 @@ disqus_username: qiubaiying
 
 **使用：**
 
-参考我的这篇文章：[《为博客添加 Gitalk 评论插件》](http://qiubaiying.top/2017/12/19/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0-Gitalk-%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/)
-
-
-### Analytics
-
-网站分析，现在支持百度统计和Google Analytics。需要去官方网站注册一下，然后将返回的code贴在下面：
-
+```_config.yml
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: 4952b119ffafda92c3a8                            #生成的clientID
+  clientSecret: a5b954eefd067bc182966fb2c406431a110f53cc    #生成的clientSecret
+  repo: parasolhunter.github.io    #仓库名称
+  owner: dengruidong    #github用户名
+  admin: dengruidong
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 ```
-# Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
-# Google Analytics
-ga_track_id: 'UA-49627206-1'            # 你用Google账号去注册一个就会给你一个这样的id
-ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto。
+```页面引用
+<!-- Gitalk 评论 start  -->
+{% if site.gitalk.enable %}
+<!-- Gitalk link  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+    <script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '{{site.gitalk.clientID}}',
+        clientSecret: '{{site.gitalk.clientSecret}}',
+        repo: '{{site.gitalk.repo}}',
+        owner: '{{site.gitalk.owner}}',
+        admin: ['{{site.gitalk.admin}}'],
+        id: 'about',
+        distractionFreeMode: '{{site.gitalk.distractionFreeMode}}',
+    });
+    gitalk.render('gitalk-container');
+</script>
+{% endif %}
+<!-- Gitalk end -->
 ```
 
 ### Customization
@@ -238,15 +260,13 @@ ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名
   
 标题底图的选取完全是看个人的审美了。每一篇文章可以有不同的底图，你想放什么就放什么，最后宽度要够，大小不要太大，否则加载慢啊。
 
-> 上传的图片最好先压缩，这里推荐 imageOptim 图片压缩软件，让你的博客起飞。
+> 上传的图片最好先压缩，这里推荐 https://tinypng.com/ 熊猫图片压缩网站，让你的博客起飞。
 
 但是需要注意的是本模板的标题是**白色**的，所以背景色要设置为**灰色**或者**黑色**，总之深色系就对了。当然你还可以自定义修改字体颜色，总之，用github pages就是可以完全的个性定制自己的博客。
 
 ### SEO Title
 
-我的博客标题是 **“BY Blog”** 但是我想要在搜索的时候显示 **“柏荧的博客 | BY Blog”** ，这个就需要 SEO Title 来定义了。
-
-其实这个 SEO Title 就是定义了<head><title>标题</title></head>这个里面的东西和多说分享的标题，你可以自行修改的。
+我的博客标题是 **“Parasol Blog”** 但是我想要在搜索的时候显示 **“邓瑞东的博客 | Parasol Blog”** ，这个就需要 SEO Title 来定义了。
 
 ### 关于收到"Page Build Warning"的 Email
 
@@ -274,5 +294,4 @@ ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名
 
 ## License
 
-遵循 MIT 许可证。有关详细,请参阅 [LICENSE](https://github.com/qiubaiying/qiubaiying.github.io/blob/master/LICENSE)。
-
+遵循 MIT 许可证。有关详细,请参阅 [LICENSE](https://github.com/parasolHunter/parasolhunter.github.io/blob/master/LICENSE)。
