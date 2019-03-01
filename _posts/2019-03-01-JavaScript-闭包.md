@@ -3,7 +3,7 @@ layout: post
 title:  "JavaScript 中的闭包"
 subtitle: 闭包
 date:   2019-03-01 11:17
-author:     Parasol
+author:    Parasol
 categories: JavaScript
 header-img: img/home-bg-o.jpg
 catalog: true
