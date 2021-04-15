@@ -35,7 +35,13 @@
 	* [标题底图](#header-image)
 	* [搜索展示标题-头文件](#seo-title)
 
-
+###步骤
+#####一 ：安装Ruby
+#####二 ：安装RubyGems
+#####三：用RubyGems安装Jekyll
+#####四：cd到博客文件夹，开启服务器
+#####五：访问 http://localhost:4000/
+#####六：提交代码到远程GitHub上
 
 ### 环境
 
