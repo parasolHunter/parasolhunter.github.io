@@ -1,17 +1,17 @@
 # Site settings
 title: Parasol Blog
-SEOTitle: 邓瑞东的博客 | Parasol Blog
+SEOTitle: 邓瑞东 | AI Agent 全栈工程师 · 高级前端架构
 header-img: img/home-bg.jpg
 email: 879623546@qq.com
-description: "邓瑞东的技术博客：AI Agent 全栈工程、多智能体编排、RAG、前端架构与工程化实践。"
-keyword: "Parasol, 邓瑞东, AI Agent, LangChain, RAG, MCP, 多智能体, 全栈, NestJS, 前端架构"
+description: "邓瑞东 · AI Agent 全栈工程与高级前端架构：多智能体编排、RAG、NestJS 全栈、研发效能与工程化实践。"
+keyword: "Parasol, 邓瑞东, AI Agent, 全栈工程师, 前端架构, LangChain, RAG, MCP, 多智能体, NestJS"
 url: "http://parasolhunter.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/parasolHunter/parasolhunter.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "You never know what you can do till you try!"
+sidebar-about-description: "AI Agent 全栈 · 高级前端架构 · 多智能体与 RAG 工程化"
 sidebar-avatar: /img/about-RD-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
