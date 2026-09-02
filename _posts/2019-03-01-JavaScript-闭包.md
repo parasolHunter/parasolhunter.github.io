@@ -3,7 +3,7 @@ layout: post
 title:  "JavaScript 中的闭包"
 subtitle: 闭包
 date:   2019-03-01 11:17
-order:  10
+order:  11
 section: tech
 author:    Parasol
 categories: JavaScript
