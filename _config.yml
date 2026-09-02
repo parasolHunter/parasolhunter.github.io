@@ -30,6 +30,7 @@ jianshu_username:   0d4833dfcc16
 
 # Build settings
 # from 2018, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+future: true                          # 允许发布未来日期的文章（批量上线时必需）
 permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
