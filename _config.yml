@@ -3,8 +3,8 @@ title: Parasol Blog
 SEOTitle: 邓瑞东的博客 | Parasol Blog
 header-img: img/home-bg.jpg
 email: 879623546@qq.com
-description: "All things are difficult before they are easy."
-keyword: "Parasol, Parasol Blog, 邓瑞东的博客, dengruidong, 邓瑞东, iOS, Apple, iPhone"
+description: "邓瑞东的技术博客：AI Agent 全栈工程、多智能体编排、RAG、前端架构与工程化实践。"
+keyword: "Parasol, 邓瑞东, AI Agent, LangChain, RAG, MCP, 多智能体, 全栈, NestJS, 前端架构"
 url: "http://parasolhunter.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/parasolHunter/parasolhunter.github.io.git" # you code repository
