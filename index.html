@@ -3,7 +3,38 @@ layout: page
 description: "Thinking will not overcome fear but action will."
 ---
 
-{% for post in paginator.posts %}
+<style>
+.home-section-title {
+    margin: 2.2em 0 0.8em;
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #404040;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 0.45em;
+}
+.home-section-title:first-of-type {
+    margin-top: 0;
+}
+</style>
+
+{% assign sorted_posts = site.posts | sort: 'order' %}
+{% assign prev_section = '' %}
+
+{% for post in sorted_posts %}
+{% if post.section and post.section != prev_section %}
+{% assign prev_section = post.section %}
+{% if post.section == 'ai-agent' %}
+<h4 class="home-section-title">AI Agent</h4>
+{% elsif post.section == 'git' %}
+<h4 class="home-section-title">Git 工作流与分支规范</h4>
+{% elsif post.section == 'flutter' %}
+<h4 class="home-section-title">Flutter 开发环境配置指南（Windows）</h4>
+{% elsif post.section == 'tech' %}
+<h4 class="home-section-title">技术栈 / 原理</h4>
+{% elsif post.section == 'tips' %}
+<h4 class="home-section-title">实用技巧</h4>
+{% endif %}
+{% endif %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
@@ -24,19 +55,3 @@ description: "Thinking will not overcome fear but action will."
 </div>
 <hr>
 {% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}

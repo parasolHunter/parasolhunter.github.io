@@ -3,6 +3,8 @@ layout:     post
 title:      ReAct 与 Function Calling：Agent 工具调用的工程实践
 subtitle:   从 CoT 到工具循环，附失败处理与全栈落地要点
 date:       2026-09-01
+order:      1
+section:    ai-agent
 author:     Parasol
 header-img: img/post-bg-universe.jpg
 catalog: true

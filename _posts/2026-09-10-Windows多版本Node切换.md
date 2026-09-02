@@ -3,6 +3,8 @@ layout:     post
 title:      Windows 多版本 Node 切换：nvm-windows 实践
 subtitle:   一台机器兼容 14 / 16 / 18 / 20 等不同项目
 date:       2026-09-10
+order:      14
+section:    tips
 author:     Parasol
 header-img: img/post-bg-universe.jpg
 catalog: true

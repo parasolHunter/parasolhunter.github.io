@@ -3,6 +3,8 @@ layout:     post
 title:      LangGraph 多步工作流编排：何时优于 LangChain Agent
 subtitle:   State、Checkpoint、interrupt 与生产选型
 date:       2026-09-04
+order:      4
+section:    ai-agent
 author:     Parasol
 header-img: img/post-bg-universe.jpg
 catalog: true
